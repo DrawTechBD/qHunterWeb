@@ -1,0 +1,80 @@
+/*Global Design*/
+.app-text-color{
+    color: #858ce0;
+}
+.btn-app{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+.custom-shadow{
+    box-shadow: 0 0 10px #c2c6ef;
+}
+.custom-rounded{
+    border-radius: 1rem;
+}
+header{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.input-group-text{
+    border-top-left-radius: 1rem !important;
+    border-bottom-left-radius: 1rem !important;
+    border-color: #858ce0 !important;
+    background-color: transparent;
+}
+.form-control{
+    border-top-right-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+    border-left: 0 !important;
+    border-color: #858ce0 !important;
+}
+.form-control:focus{
+    box-shadow: none !important;
+}
+.btn-app-secondary{
+    border: 1px solid #c3c6ef;
+    height: calc(1.5em + 0.75rem + 2px);
+    background-color: #d7d9f4;
+}
+
+/*Design for desktop view*/
+@media (min-width: 768px) {
+    .btn-app:hover{
+        color: #fff;
+    }
+    header{
+        height: 45vh;
+    }
+    header .app-logo{
+        margin-top: 4vh;
+    }
+    main{
+        margin-top: -100px;
+    }
+    footer{
+        display: none;
+    }
+    #qrModal .btn-app{
+        font-size: 0.8rem;
+    }
+}
+
+/*Design for android view*/
+@media (max-width: 767px) {
+    header{
+        border-bottom-left-radius: 5rem;
+    }
+    main .desktop-nav{
+        display: none;
+    }
+    footer .navbar{
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+        border-top: 1px solid #c3c6ef;
+        font-size: 1.1rem;
+    }
+    footer .navbar-nav{
+        flex-direction: unset !important;
+    }
+}
+
+

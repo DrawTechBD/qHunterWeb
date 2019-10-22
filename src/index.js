@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// import * as Sentry from '@sentry/browser';
 
+// Sentry.init({dsn: "https://1c63d796d2bf43ed9e45b5ac47a3d787@sentry.io/1781997"});
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

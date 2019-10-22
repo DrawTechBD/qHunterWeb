@@ -1,15 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--suppress HtmlUnknownTarget -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/icofont.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/app.css">
+
+    <link rel="shortcut icon" href="%PUBLIC_URL%/img/favicon.png" type="image/x-icon">
+    <title>qHunter!</title>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -25,10 +28,24 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="pre-loader"  style="display: flex; justify-content: center; align-items: center; background: #4a0072; height: 100vh;">
+        <div>
+            <lottie-player
+                    src="%PUBLIC_URL%/img/splash_loading.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop  autoplay >
+            </lottie-player>
+        </div>
+<!--        <div>-->
+<!--            <img src="%PUBLIC_URL%/img/app-logo-small.png" alt="">-->
+<!--            <p><strong class="text-white">qHunter</strong></p>-->
+<!--        </div>-->
+    </div>
+
+    <div id="root">
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +56,24 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv1Pru3Bch7f24V2rXjViGHN_J4UVXSig&libraries=places"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script type="text/javascript">
+        $(function() {
+            // setTimeout() function will be fired after page is loaded
+            // it will wait for 5 sec. and then will fire
+            // $("#successMessage").hide() function
+            setTimeout(function() {
+                $("#pre-loader").hide('blind', {}, 500)
+            }, 3000);
+        });
+    </script>
   </body>
 </html>
