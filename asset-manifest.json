@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/qhunterweb/static/css/main.34de6062.chunk.css",
+    "main.js": "/qhunterweb/static/js/main.7bd7ae4c.chunk.js",
+    "main.js.map": "/qhunterweb/static/js/main.7bd7ae4c.chunk.js.map",
+    "runtime-main.js": "/qhunterweb/static/js/runtime-main.f57a3033.js",
+    "runtime-main.js.map": "/qhunterweb/static/js/runtime-main.f57a3033.js.map",
+    "static/css/2.1f49d22b.chunk.css": "/qhunterweb/static/css/2.1f49d22b.chunk.css",
+    "static/js/2.513ba624.chunk.js": "/qhunterweb/static/js/2.513ba624.chunk.js",
+    "static/js/2.513ba624.chunk.js.map": "/qhunterweb/static/js/2.513ba624.chunk.js.map",
+    "index.html": "/qhunterweb/index.html",
+    "precache-manifest.5694b0f0a97805244d3a9b43a6e2e1b1.js": "/qhunterweb/precache-manifest.5694b0f0a97805244d3a9b43a6e2e1b1.js",
+    "service-worker.js": "/qhunterweb/service-worker.js",
+    "static/css/2.1f49d22b.chunk.css.map": "/qhunterweb/static/css/2.1f49d22b.chunk.css.map",
+    "static/css/main.34de6062.chunk.css.map": "/qhunterweb/static/css/main.34de6062.chunk.css.map",
+    "static/media/app-logo-small.png": "/qhunterweb/static/media/app-logo-small.2dca1bc2.png",
+    "static/media/dropify.css": "/qhunterweb/static/media/dropify.b321d818.svg",
+    "static/media/dropify.ttf": "/qhunterweb/static/media/dropify.86cb1ab0.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f57a3033.js",
+    "static/css/2.1f49d22b.chunk.css",
+    "static/js/2.513ba624.chunk.js",
+    "static/css/main.34de6062.chunk.css",
+    "static/js/main.7bd7ae4c.chunk.js"
+  ]
+}
