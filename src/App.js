@@ -3,7 +3,6 @@ import logo from './app-logo-small.png';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Generate from "./pages/Generate";
 import Scanner from "./pages/Scanner";
-import Auth from "./pages/Auth";
 import User from "./pages/User";
 import Edit from "./pages/Edit";
 
@@ -48,7 +47,6 @@ function App() {
                                     <Switch>
                                         <Route exact path="/" component={Generate}/>
                                         <Route path="/scan" component={Scanner} />
-                                        <Route path="/auth" component={Auth} />
                                         <Route path="/user" component={User} />
                                         <Route path="/edit" component={Edit} />
                                     </Switch>
